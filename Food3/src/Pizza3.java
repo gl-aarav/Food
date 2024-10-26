@@ -10,5 +10,8 @@ public class Pizza3 extends Food3
 	{
 		super ("baked", ingredientln, nameln);
 	}
-	
+	public Pizza3 (String prepMethod, String name, double pricePerItem, int numberOfItem, String ingredient)
+	{
+		super(prepMethod, name, pricePerItem, numberOfItem, ingredient);
+	}
 }	

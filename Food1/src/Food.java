@@ -1,28 +1,34 @@
 /*
  * Aarav Goyal
  * 10/23/2024
- * Food.java
-  
+ * Food.java 
 */
-
 
 public class Food
 {
-	protected String str;
-	
-	public Food ()
-	{
-		str = new String("");
-	}
-	
-	public Food (String prepMethod, String ingredient, String name)
-	{	
-		str = "At the sale: " + name + " " + prepMethod + " with " + ingredient;
-	}
+    // Protected string to hold the description of the food item
+    protected String str;
+    
+    // Default constructor that initializes str to an empty string
+    public Food ()
+    {
+        str = new String(""); // Initialize with an empty string
+    }
+    
+    // Constructor that initializes str with a formatted description of the food item
+    // Parameters:
+    // - prepMethod: the method of preparation (e.g., grilled, fried)
+    // - ingredient: the main ingredient used in the food item
+    // - name: the name of the food item
+    public Food (String prepMethod, String ingredient, String name)
+    {   
+        // Construct a descriptive string for the food item
+        str = "At the sale: " + name + " " + prepMethod + " with " + ingredient;
+    }
 
-	public void printForSale()
-	{
-		System.out.println(str);
-	}
+    // Method to print the description of the food item to the console
+    public void printForSale()
+    {
+        System.out.println(str); // Output the food description
+    }
 }
- 
